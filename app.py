@@ -17,7 +17,7 @@ import streamlit as st
 # Load the data
 @st.cache
 def load_data():
-    data = pd.read_csv('/content/2022.csv')  # Replace with the correct path
+    data = pd.read_csv('2022.csv')  # Replace with the correct path
     data = data[["Institute", "Academic Program Name", "Seat Type", "Opening Rank", "Closing Rank", "Round"]]
     data.dropna(inplace=True)
 
